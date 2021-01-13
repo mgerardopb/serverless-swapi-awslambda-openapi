@@ -1,0 +1,120 @@
+      - name: FilmResponse
+        description: Registrar persona
+        contentType: application/json
+        schema:
+          $schema: http://json-schema.org/draft-04/schema#
+          type: array
+          items:
+            type: object
+            properties:
+              caracteres:
+                type: string
+              creado:
+                type: string
+              director:
+                type: string
+              modificado:
+                type: string
+              episodio_identificador:
+                type: string
+              rastreo:
+                type: string
+              planetas:
+                type: string
+              productor:
+                type: string
+              fecha_estreno:
+                type: string
+              especies:
+                type: string
+              naves:
+                type: string
+              titulo:
+                type: string
+              url:
+                type: string
+              vehiculos:
+                type: string
+      - name: PeopleResponse
+        description: Registrar persona
+        contentType: application/json
+        schema:
+          $schema: http://json-schema.org/draft-04/schema#
+          type: array
+          items:
+            type: object
+            properties:
+              fecha_nacimiento:
+                type: string
+              color_ojo:
+                type: string
+              peliculas:
+                type: string
+              genero:
+                type: string
+              color_cabello:
+                type: string
+              altura:
+                type: string
+              planeta:
+                type: string
+              masa:
+                type: string
+              nombre:
+                type: string
+              color_piel:
+                type: string
+              creado:
+                type: string
+              modificado:
+                type: string
+              especie:
+                type: string
+              naves:
+                type: string
+              url:
+                type: string
+              vehiculos:
+                type: string
+      - name: CreatePersonRequest
+        description: Persona a registrar
+        contentType: application/json
+        schema:
+          $schema: http://json-schema.org/draft-04/schema#
+          properties:
+            firstName:
+              type: string
+            lastName:
+              type: string
+            email:
+              type: string
+      - name: CreatePersonResponse
+        description: Persona registrada
+        contentType: application/json
+        schema:
+          $schema: http://json-schema.org/draft-04/schema#
+          properties:
+            firstName:
+              type: string
+            lastName:
+              type: string
+            email:
+              type: string
+            submittedAt:
+              type: number
+            updatedAt:
+              type: number
+      - name: PersonResponse
+        description: Listar personas registradas
+        contentType: application/json
+        schema:
+          $schema: http://json-schema.org/draft-04/schema#
+          properties:
+            id:
+              type: string
+            firstName:
+              type: string
+            lastName:
+              type: string
+            email:
+              type: string
